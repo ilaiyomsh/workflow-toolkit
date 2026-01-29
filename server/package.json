@@ -1,0 +1,26 @@
+{
+  "name": "@workflow-toolkit/server",
+  "version": "1.0.0",
+  "description": "Express server for Workflow Toolkit",
+  "type": "module",
+  "main": "src/app.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "concurrently --names \"server,tunnel\" --prefix-colors \"cyan,magenta\" \"nodemon src/app.js\" \"mapps tunnel:create -p 8080\"",
+    "dev": "concurrently --names \"server,tunnel\" --prefix-colors \"cyan,magenta\" \"nodemon src/app.js\" \"mapps tunnel:create -p 8080\"",
+    "server": "nodemon src/app.js",
+    "tunnel": "mapps tunnel:create -p 8080"
+  },
+  "dependencies": {
+    "@workflow-toolkit/formula-engine": "workspace:*",
+    "@workflow-toolkit/shared": "workspace:*",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.0.0"
+  }
+}

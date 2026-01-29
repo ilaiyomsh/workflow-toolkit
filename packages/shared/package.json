@@ -1,0 +1,31 @@
+{
+  "name": "@workflow-toolkit/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities for Workflow Toolkit",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./middlewares": "./src/middlewares/index.js",
+    "./services": "./src/services/index.js",
+    "./services/monday-api": "./src/services/monday-api.js",
+    "./services/logger": "./src/services/logger/index.js",
+    "./helpers": "./src/helpers/index.js",
+    "./helpers/secret-store": "./src/helpers/secret-store.js",
+    "./helpers/field-extractors": "./src/helpers/field-extractors.js"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "node-fetch": "^2.6.1"
+  },
+  "keywords": [
+    "monday.com",
+    "workflow",
+    "utilities"
+  ],
+  "license": "MIT"
+}

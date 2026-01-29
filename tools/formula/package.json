@@ -1,0 +1,17 @@
+{
+  "name": "@workflow-toolkit/formula",
+  "version": "1.0.0",
+  "description": "Formula Tool - Blocks for working with Monday.com formula columns",
+  "type": "module",
+  "main": "blocks/formula-to-text/index.js",
+  "dependencies": {
+    "@workflow-toolkit/formula-engine": "workspace:*",
+    "@workflow-toolkit/shared": "workspace:*"
+  },
+  "keywords": [
+    "monday.com",
+    "formula",
+    "workflow"
+  ],
+  "license": "MIT"
+}

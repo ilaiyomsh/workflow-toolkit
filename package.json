@@ -1,0 +1,23 @@
+{
+  "name": "workflow-toolkit",
+  "version": "1.0.0",
+  "description": "Monday.com Workflow Toolkit - A collection of automation blocks and tools",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -F @workflow-toolkit/server dev",
+    "start": "pnpm -F @workflow-toolkit/server start",
+    "server": "pnpm -F @workflow-toolkit/server server",
+    "tunnel": "pnpm -F @workflow-toolkit/server tunnel"
+  },
+  "keywords": [
+    "monday.com",
+    "workflow",
+    "automation",
+    "toolkit"
+  ],
+  "license": "MIT"
+}

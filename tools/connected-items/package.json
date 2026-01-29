@@ -1,0 +1,16 @@
+{
+  "name": "@workflow-toolkit/connected-items",
+  "version": "1.0.0",
+  "description": "Connected Items Tool - Blocks for working with Monday.com connected board items",
+  "type": "module",
+  "main": "blocks/update-connected-items/index.js",
+  "dependencies": {
+    "@workflow-toolkit/shared": "workspace:*"
+  },
+  "keywords": [
+    "monday.com",
+    "connected-items",
+    "workflow"
+  ],
+  "license": "MIT"
+}

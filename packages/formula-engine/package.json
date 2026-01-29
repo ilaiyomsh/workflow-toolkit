@@ -1,0 +1,26 @@
+{
+  "name": "@workflow-toolkit/formula-engine",
+  "version": "1.0.0",
+  "description": "Formula parser and evaluator for Monday.com formulas",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./tokenizer": "./src/tokenizer.js",
+    "./parser": "./src/parser.js",
+    "./evaluator": "./src/evaluator.js",
+    "./column-value-extractor": "./src/column-value-extractor.js",
+    "./functions": "./src/functions/index.js",
+    "./resolver": "./src/resolver/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "monday.com",
+    "formula",
+    "parser",
+    "evaluator"
+  ],
+  "license": "MIT"
+}
