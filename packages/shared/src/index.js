@@ -9,7 +9,13 @@ export { requestLoggerMiddleware } from './middlewares/index.js';
 
 // Services
 export { default as logger } from './services/logger/index.js';
-export { createApiClient, getFormulaColumns } from './services/monday-api.js';
+export {
+  createApiClient,
+  getColumnType,
+  formatValueForColumnType,
+  updateColumnValue,
+  getFormulaColumns
+} from './services/monday-api.js';
 
 // Helpers
 export { getSecret } from './helpers/secret-store.js';
