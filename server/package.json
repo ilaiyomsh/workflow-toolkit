@@ -8,10 +8,13 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "concurrently --names \"server,tunnel\" --prefix-colors \"cyan,magenta\" \"nodemon src/app.js\" \"mapps tunnel:create -p 8080\"",
-    "dev": "concurrently --names \"server,tunnel\" --prefix-colors \"cyan,magenta\" \"nodemon src/app.js\" \"mapps tunnel:create -p 8080\"",
+    "start": "node src/app.js",
+    "dev": "concurrently --names \"server,tunnel\" --prefix-colors \"cyan,magenta\" \"nodemon src/app.js\" \"mapps tunnel:create -p 8080 -a 10787086\"",
     "server": "nodemon src/app.js",
-    "tunnel": "mapps tunnel:create -p 8080"
+    "tunnel": "mapps tunnel:create -p 8080 -a 10787086",
+    "deploy": "mapps code:push -a 10787086",
+    "logs": "mapps code:logs -i 10787086 -s live -t console",
+    "logs:http": "mapps code:logs -i 10787086 -s live -t http"
   },
   "dependencies": {
     "@workflow-toolkit/formula-engine": "workspace:*",

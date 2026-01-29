@@ -11,7 +11,10 @@
     "dev": "pnpm -F @workflow-toolkit/server dev",
     "start": "pnpm -F @workflow-toolkit/server start",
     "server": "pnpm -F @workflow-toolkit/server server",
-    "tunnel": "pnpm -F @workflow-toolkit/server tunnel"
+    "tunnel": "pnpm -F @workflow-toolkit/server tunnel",
+    "deploy": "pnpm -F @workflow-toolkit/server deploy",
+    "logs": "pnpm -F @workflow-toolkit/server logs",
+    "logs:http": "pnpm -F @workflow-toolkit/server logs:http"
   },
   "keywords": [
     "monday.com",
