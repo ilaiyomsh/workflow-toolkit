@@ -119,8 +119,16 @@ pnpm install
 
 **Run Development Server:**
 ```bash
-pnpm dev      # Server + tunnel (auto-reload)
-pnpm server   # Server only
+pnpm dev      # Server + tunnel with consistent URL
+pnpm server   # Server only (no tunnel)
+pnpm tunnel   # Tunnel only
+```
+
+**Deploy & Monitor:**
+```bash
+pnpm deploy      # Push to monday-code
+pnpm logs        # Stream console logs
+pnpm logs:http   # Stream HTTP logs
 ```
 
 **Add a New Tool:**
@@ -166,6 +174,29 @@ Column references use `{columnId}` or `{columnId#field}` syntax.
 | `@workflow-toolkit/shared` | Shared utilities, middlewares, services |
 | `@workflow-toolkit/server` | Express server |
 | `@workflow-toolkit/formula` | Formula tool with blocks |
+
+## Skills (Claude Code)
+
+Available skills in `.claude/skills/`:
+
+| Skill | Command | Description |
+|-------|---------|-------------|
+| `add-tool` | `/add-tool [tool] [block]` | Create new tool or block |
+| `mapps` | `/mapps [command]` | Monday CLI reference & helpers |
+
+## Monday CLI (mapps)
+
+App ID: `10787086` | Tunnel: `https://10787086-*.apps-tunnel.monday.app`
+
+```bash
+# Common commands
+mapps tunnel:create -p 8080 -a 10787086   # Create tunnel
+mapps code:push -a 10787086               # Deploy
+mapps code:logs -i 10787086 -s live -t console  # View logs
+mapps app:list                            # List apps
+```
+
+See `/mapps` skill for complete reference.
 
 ## Documentation
 
